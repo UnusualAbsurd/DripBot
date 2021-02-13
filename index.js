@@ -52,4 +52,4 @@ client.events = new Discord.Collection();
 
 // });
 
-client.login('ODA4OTQ2Mjc3ODMxMTQ3NTUw.YCN77g._8AzX5lLdiZkZionFl5X5YsOPVQ');
+client.login('TOKEN');
