@@ -6,8 +6,9 @@ const { MessageEmbed, Message } = require("discord.js")
 
 module.exports = {
     name: 'ping',
+    aliases: ["Ping"],
     description: "this is a ping cmd",
-    permissions: ["SEND_MESSAGES"],
+    permissions: ["MANAGE_MESSAGES"],
 
 execute(client, message, args, Discord){
 
