@@ -1,5 +1,6 @@
 module.exports = {
     name: 'purge',
+    aliases: ["Purge", "clear", "Clear", "deletemessages"],
     permissions: ["MANAGE_MESSAGES"],
     description: "Clear messages!",
    async  execute(client, message, args, Discord) {
@@ -14,7 +15,9 @@ module.exports = {
         await message.channel.messages.fetch({ limit: args[0]}).then(messages =>{
             message.channel.bulkDelete(messages)
 
-            message.channel.send('Deleting......... :wastebasket: ');
+ message.channel.send('Deleting......... :wastebasket: ');
+
+
            
             
     });
