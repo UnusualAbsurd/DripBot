@@ -7,7 +7,8 @@ module.exports = {
 
 
   
-  async execute(client, message, args, Discord) {
+  async     execute(message, args, cmd, client, Discord) {
+
   
 
     if (!args[0]) return message.channel.send(`You did not specify your time!`);

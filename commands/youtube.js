@@ -5,7 +5,8 @@ module.exports = {
     name: 'ytsearch',
     permissions: ["SEND_MESSAGES"],
 
-    async execute(client, message, args, Discord) {
+    async     execute(message, args, cmd, client, Discord) {
+
 
         const query = args.join(" ");
         if(!query) return message.channel.send('PLease provide a search');

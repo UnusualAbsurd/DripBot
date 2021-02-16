@@ -9,7 +9,8 @@ module.exports = {
     description: 'Sends meme',
     permissions: ["SEND_MESSAGES"],
 
-   async execute(client, message, args, Discord) {
+   async    execute(message, args, cmd, client, Discord) {
+
 
      const  subReddits = ["MEME", "DankMemes", "meirl", "wholesomememes"];
      const random = subReddits[Math.floor(Math.random() * subReddits.length)];

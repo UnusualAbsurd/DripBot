@@ -7,7 +7,8 @@ module.exports = {
     description: 'Return a user(s) avatar picture!',
     permissions: ["SEND_MESSAGES"],
     //Use your own execute parameters
-    async execute(client, message, cmd, args) {
+    async     execute(message, args, cmd, client, Discord) {
+
 
         const user = message.mentions.users.first() || message.author;
         message.channel.send(

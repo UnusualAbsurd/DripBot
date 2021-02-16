@@ -5,7 +5,8 @@ module.exports = {
     aliases: ['slow'],
     permissions: ["MANAGE_MESSAGES"],
 
-async execute(client, message, args, Discord){
+    execute(message, args, cmd, client, Discord) {
+
     if (!message.member.hasPermission("BAN_MEMBERS")){
         messages.channel.send(new Discord.MessageEmbed() .setDescription('You Cannot do that, Missing Permissions') .setColor('RED'))
         return;

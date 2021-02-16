@@ -2,7 +2,7 @@ module.exports = {
     name: 'ban',
     permissions: ["KICK_MEMBERS"],
 
-    execute(client, message, args, Discord) {
+    execute(message, args, cmd, client, Discord) {
         const member = message.mentions.users.first();
         if (member) {
             const memberTarger = message.guild.members.cache.get(member.id);

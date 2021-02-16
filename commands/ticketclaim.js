@@ -8,7 +8,7 @@ module.exports = {
     permissions: ["MANAGE_MESSAGES"],
 
 
-    execute(client, message, args, Discord) {
+    execute(message, args, cmd, client, Discord) {
         
   const emb = new MessageEmbed()
   .setTitle('Ticket Claimed ✅')

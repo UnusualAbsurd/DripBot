@@ -1,8 +1,10 @@
 module.exports = {
     name: 'ticket',
+    aliases: ["Ticket"],
     permissions: ["SEND_MESSAGES"],
 
-    execute(client, message, args, Discord) {
+    execute(message, args, cmd, client, Discord) {
+
 
         const user = message.author.id;
         const name = "ticket-" + user;

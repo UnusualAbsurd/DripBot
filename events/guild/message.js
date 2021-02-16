@@ -56,6 +56,6 @@ module.exports = (Discord, client, message) => {
         }
       }
 
-    if(command) command.execute(client, message, args, Discord);
+    if(command) command.execute(message, args, cmd, client, Discord);
 
 }

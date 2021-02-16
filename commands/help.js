@@ -7,7 +7,8 @@ module.exports = {
 
    
 
-    execute(client, message, args, Discord) {
+    execute(message, args, cmd, client, Discord) {
+
 
         const emb = new MessageEmbed()
         .setTitle('Help commands')
@@ -19,7 +20,15 @@ module.exports = {
         .ping [ sends your ping and bot latency ]
         
         .weather [ Tells the weather in a specific city ]
-        ** { aliases : .wthr } ** `)
+        ** { aliases : .wthr } ** 
+        
+        .ytsearch [ search youtube videos ]
+
+        .ticket [ create a ticket ]
+
+        .avatar [ Sends user avatar ] `)
+
+        .setColor("RED")
 
                           message.channel.send(emb);
 
